@@ -29,11 +29,11 @@ pkg install git -y
 ```
 3. Clone this repo
 ```
-git clone https://github.com/RejctXvpn/rejctx-demons-cli-main
+git clone https://github.com/RajaxTools/ToolsV1-demons-cli-main
 ```
 4. Open the folder
 ```
-cd rejctx-demons-cli-main
+cd ToolsV1-demons-cli-main
 ```
 5. Setup
 ```
@@ -76,10 +76,10 @@ apt install python-pillow
 ```
 ```
 
-git clone https://github.com/RejctXvpn/rejctx-demons-cli-main
+git clone https://github.com/RajaxTools/ToolsV1-demons-cli-main
 ```
 ```
-cd rejctx-demons-cli-main
+cd ToolsV1-demons-cli-main
 ```
 ```
 pip install -r requirements.txt
