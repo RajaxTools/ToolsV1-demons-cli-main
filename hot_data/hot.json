@@ -48,10 +48,10 @@
         "order": 1
     },
     {
-        "family_name": "Bebas Puas - 49GB",
+        "family_name": "Bebas Puas",
         "family_code": "d0a349a7-0b3a-4552-bc1d-3fd9ac0a17ee",
         "is_enterprise": false,
-        "variant_name": "Bebas Puas",
+        "variant_name": "8.000/hari - 49.03GB",
         "option_name": "49GB",
         "order": 12
     },
@@ -88,11 +88,11 @@
         "order": 44
     },
     {
-        "family_name": "Bebas Puas - 40GB",
+        "family_name": "Bebas Puas - 30GB",
         "family_code": "eb2f99e5-4fa3-4f34-951f-6769ec9e38a1",
         "is_enterprise": false,
         "variant_name": "Bebas Puas",
-        "option_name": "40GB",
+        "option_name": "30GB",
         "order": 23
     },
     {
@@ -104,11 +104,11 @@
         "order": 12
     },
     {
-        "family_name": "Bebas Puas - 60.00GB",
+        "family_name": "Bebas Puas - 45.00GB",
         "family_code": "eb2f99e5-4fa3-4f34-951f-6769ec9e38a1",
         "is_enterprise": false,
         "variant_name": "Bebas Puas",
-        "option_name": "60GB",
+        "option_name": "45GB",
         "order": 22
     },
     {
