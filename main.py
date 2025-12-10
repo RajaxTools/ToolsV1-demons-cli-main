@@ -85,7 +85,6 @@ def show_main_menu(profile):
         ("99", "Tutup Aplikasi"),
     ]
     
-# ========== Menu Ganti Tema ==========
 def menu_ganti_theme():
     clear_screen()
     theme_names = list(THEMES.keys())
