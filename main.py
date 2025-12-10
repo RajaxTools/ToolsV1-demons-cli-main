@@ -26,6 +26,7 @@ from app.menus.store.segments import show_store_segments_menu
 from app.menus.store.search import show_family_list_menu, show_store_packages_menu
 from app.menus.store.redemables import show_redeemables_menu
 from app.client.registration import dukcapil
+from app.theme import _c, console, set_theme, get_active_theme_name, THEMES
 
 # NEW IMPORTS FOR UI
 from rich.table import Table
@@ -76,12 +77,52 @@ def show_main_menu(profile):
         ("15", "Store Family List"),
         ("16", "Store Packages"),
         ("17", "Redemables"),
+        ("18", "🎨 Ganti Gaya"),
         ("R", "Register Dukcapil"),
         ("N", "Notifikasi"),
         ("V", "Validate MSISDN"),
         ("00", "Bookmark Paket"),
         ("99", "Tutup Aplikasi"),
     ]
+    
+# ========== Menu Ganti Tema ==========
+def menu_ganti_theme():
+    clear_screen()
+    theme_names = list(THEMES.keys())
+    active_theme = get_active_theme_name()
+
+    table = Table(box=MINIMAL_DOUBLE_HEAD, expand=True)
+    table.add_column("", justify="right", style=_c("text_number"), width=6)
+    table.add_column("Nama Tema", style=_c("text_body"))
+    table.add_column("Preview", style=_c("text_body"))
+
+    for idx, name in enumerate(theme_names, 1):
+        preset = THEMES[name]
+        preview = (
+            f"[{preset['border_primary']}]■[/] "
+            f"[{preset['border_info']}]■[/] "
+            f"[{preset['border_success']}]■[/] "
+            f"[{preset['border_error']}]■[/] "
+            f"[{preset['text_title']}]A[/]"
+        )
+        aktif = f"[{_c('text_sub')}] (aktif)[/{_c('text_sub')}]" if name == active_theme else ""
+        table.add_row(str(idx), f"{name}{aktif}", preview)
+
+    panel = Panel(table, title="", border_style=_c("border_info"), padding=(1, 0), expand=True)
+    console.print(panel)
+
+    pilihan = console.input(f"\n[{_c('text_sub')}]Masukkan nomor tema yang diinginkan:[/{_c('text_sub')}] ").strip()
+    try:
+        idx = int(pilihan) - 1
+        if idx < 0 or idx >= len(theme_names):
+            pesan_error("Pilihan tema tidak valid.")
+        else:
+            nama_tema = theme_names[idx]
+            set_theme(nama_tema)
+            pesan_sukses(f"Tema berhasil diganti ke '{nama_tema}'.")
+    except Exception:
+        pesan_error("Input tidak valid.")
+    pause()
 
     for key, desc in menu_items:
         menu_table.add_row(key, desc)
