@@ -76,6 +76,7 @@ def show_main_menu(profile):
         ("15", "Store Family List"),
         ("16", "Store Packages"),
         ("17", "Redemables"),
+        ("18", "🎨 Ganti Gaya"),
         ("R", "Register Dukcapil"),
         ("N", "Notifikasi"),
         ("V", "Validate MSISDN"),
