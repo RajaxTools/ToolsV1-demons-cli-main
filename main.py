@@ -90,7 +90,6 @@ def show_main_menu(profile):
 
     console.print(Panel(menu_table, title="[neon_pink]MAIN MENU[/]", border_style="neon_cyan"))
     
-# ========== Menu Ganti Tema ==========
 def menu_ganti_theme():
     clear_screen()
     theme_names = list(THEMES.keys())
