@@ -96,6 +96,14 @@
         "order": 5
     },
     {
+        "family_name": "BIZ Prepaid",
+        "family_code": "ae2707e6-2996-45f8-944a-8a391e956f28",
+        "is_enterprise": true,
+        "variant_name": "BIZ E-Commerce",
+        "option_name": "BIZ Prime",
+        "order": 8
+    },
+    {
         "family_name": "Akrab - Akrab myFi 100GB",
         "family_code": "7b24c274-3aa8-42df-ae80-e4e94e33e331",
         "is_enterprise": false,
