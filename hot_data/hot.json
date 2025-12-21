@@ -40,12 +40,12 @@
         "order": 2
     },
     {
-        "family_name": "BIZ Manufacture",
-        "family_code": "f3303d95-8454-4e80-bb25-38513d358a11",
+        "family_name": "BIZ Prepaid",
+        "family_code": "ae2707e6-2996-45f8-944a-8a391e956f28",
         "is_enterprise": true,
-        "variant_name": "BIZ Manufacture",
-        "option_name": "Merah Putih 6GB",
-        "order": 1
+        "variant_name": "BIZ E-Commerce",
+        "option_name": "BIZ Pro",
+        "order": 3
     },
     {
         "family_name": "BIZ Prepaid",
