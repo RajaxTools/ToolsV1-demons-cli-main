@@ -44,6 +44,14 @@
         "family_code": "ae2707e6-2996-45f8-944a-8a391e956f28",
         "is_enterprise": true,
         "variant_name": "BIZ E-Commerce",
+        "option_name": "BIZ Infinity",
+        "order": 1
+    },
+    {
+        "family_name": "BIZ Prepaid",
+        "family_code": "ae2707e6-2996-45f8-944a-8a391e956f28",
+        "is_enterprise": true,
+        "variant_name": "BIZ E-Commerce",
         "option_name": "BIZ Maxima",
         "order": 2
     },
