@@ -173,7 +173,7 @@
         "is_enterprise": false,
         "variant_name": "Reguler",
         "option_name": "5GB",
-        "order": 21
+        "order": 24
     },
     {
         "family_name": "XTRA Combo",
@@ -189,7 +189,7 @@
         "is_enterprise": false,
         "variant_name": "Reguler",
         "option_name": "5gb",
-        "order": 24
+        "order": 17
     },
     {
         "family_name": "XTRA Combo",
