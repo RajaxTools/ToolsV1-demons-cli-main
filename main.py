@@ -632,11 +632,12 @@ def main():
                 AuthInstance.set_active_user(selected_user_number)
             else:
                 print(f"{bcolors.FAIL}No user selected or failed to load user.{bcolors.ENDC}")
-
+                
 if __name__ == "__main__":
     try:
-        print(f"{bcolors.OKCYAN}Checking for updates...{bcolors.ENDC}")
-        need_update = check_for_updates()
+        print_step("Checking for updates...")
+        with loading_animation("Checking git..."):
+            need_update = check_for_updates()
         if need_update:
             pause()
 
